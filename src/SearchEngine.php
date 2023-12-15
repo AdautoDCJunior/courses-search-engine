@@ -5,16 +5,19 @@ namespace Alura\CoursesSearchEngine;
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
 
-class SearchEngine {
-    public $httpClient;
-    public $crawler;
+class SearchEngine
+{
+    private $httpClient;
+    private $crawler;
 
-    public function __construct(ClientInterface $httpClient, Crawler $crawler) {
+    public function __construct(ClientInterface $httpClient, Crawler $crawler)
+    {
         $this->httpClient = $httpClient;
         $this->crawler = $crawler;
     }
 
-    public function search(string $url): array {
+    public function search(string $url): array
+    {
         $response = $this->httpClient->request("GET", $url);
 
         $html = $response->getBody();
