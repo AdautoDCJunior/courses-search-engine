@@ -1,7 +1,6 @@
 <?php
 
 require __DIR__ . "/vendor/autoload.php";
-require __DIR__ . "/src/SearchEngine.php";
 
 use Alura\CoursesSearchEngine\SearchEngine;
 use GuzzleHttp\Client;
