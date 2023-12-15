@@ -2,9 +2,9 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
-use Alura\CoursesSearchEngine\SearchEngine;
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
+use Alura\CoursesSearchEngine\SearchEngine;
 
 $client = new Client(["base_uri" => "https://www.alura.com.br/"]);
 $crawler = new Crawler();
