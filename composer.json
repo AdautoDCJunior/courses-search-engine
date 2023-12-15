@@ -1,0 +1,12 @@
+{
+    "name": "adautodcjunior/courses-search-engine",
+    "description": "Project to retrieve courses from the Alura website",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Adauto Júnior",
+            "email": "adautodcjunior@gmail.com"
+        }
+    ],
+    "require": {}
+}
